@@ -1,0 +1,11 @@
+{
+    "$schema": "./root.json",
+    "greeting": "Biswajit",
+    "instructions": [
+        "test1",
+        "test2",
+        "test2"
+    ],
+    "pin": 5,
+    "country": "brazil"
+}

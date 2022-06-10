@@ -1,0 +1,65 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome",
+    "definitions": {
+        "Welcome": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "greeting",
+                "instructions",
+                "pin",
+                "country"
+            ],
+            "properties": {
+                "greeting": {
+                    "type": "string"
+                },
+                "instructions": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "location": {
+                    "type": "string"
+                },
+                "pin": {
+                    "type": "integer"
+                },
+                "country": {
+                    "$id": "#/properties/country",
+                    "type": "string",
+                    "title": "cititenship country",
+                    "description": "country",
+                    "default": "Unknown",
+                    "enum": [
+                        "india",
+                        "us",
+                        "uk",
+                        "china",
+                        "brazil",
+                        "chand",
+                        "ghana",
+                        "vatican",
+                        "sanmarino",
+                        "Unknown"
+                    ],
+                    "examples": [
+                        "india",
+                        "us",
+                        "uk",
+                        "china",
+                        "brazil",
+                        "chand",
+                        "ghana",
+                        "vatican",
+                        "sanmarino",
+                        "Unknown"
+                    ]
+                }
+            },
+            "title": "Welcome"
+        }
+    }
+}
