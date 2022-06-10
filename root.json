@@ -24,6 +24,9 @@
                 "location": {
                     "type": "string"
                 },
+                "hoddysize": {
+                    "type":"integer"
+                },
                 "pin": {
                     "type": "integer"
                 },
