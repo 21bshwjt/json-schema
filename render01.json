@@ -6,9 +6,8 @@
         "test2",
         "test2"
     ],
-    "pin": 5,
     "country": "india",
-    "hoddysize": 38,
-    "location": "Kolkata"
-
+    "pin": 700,
+    "city": "capetown",
+    "hoddysize": 1
 }

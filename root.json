@@ -1,5 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Biswajit test JSON Schema",
+    "description": "Test JSON Schema",
     "$ref": "#/definitions/Welcome",
     "definitions": {
         "Welcome": {
@@ -9,11 +11,13 @@
                 "greeting",
                 "instructions",
                 "pin",
-                "country"
+                "country",
+                "city"
             ],
             "properties": {
                 "greeting": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "tbd"
                 },
                 "instructions": {
                     "type": "array",
@@ -22,13 +26,18 @@
                     }
                 },
                 "location": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "location is an optional field"
                 },
                 "hoddysize": {
-                    "type":"integer"
+                    "type": "integer",
+                    "exclusiveMinimum": 0,
+                    "description": "hoddysize is an optional field"
                 },
                 "pin": {
-                    "type": "integer"
+                    "type": "integer",
+                    "minimum": 600,
+                    "maximum": 799999
                 },
                 "country": {
                     "$id": "#/properties/country",
@@ -60,9 +69,39 @@
                         "sanmarino",
                         "Unknown"
                     ]
+                },
+                "city": {
+                    "$id": "#/properties/city",
+                    "type": "string",
+                    "title": "city name",
+                    "description": "city",
+                    "default": "Unknown",
+                    "enum": [
+                        "kolkata",
+                        "bangalore",
+                        "london",
+                        "newyork",
+                        "bajing",
+                        "capetown",
+                        "colombo",
+                        "dhaka",
+                        "korachi",
+                        "Unknown"
+                    ],
+                    "examples": [
+                        "kolkata",
+                        "bangalore",
+                        "london",
+                        "newyork",
+                        "bajing",
+                        "capetown",
+                        "colombo",
+                        "dhaka",
+                        "korachi",
+                        "Unknown"
+                    ]
                 }
-            },
-            "title": "Welcome"
+            }
         }
     }
 }
