@@ -1,12 +1,12 @@
 {
-    "$schema": "./root.json",
+    "$schema": "https://raw.githubusercontent.com/21bshwjt/json-schema/master/root.json",
     "name": "biswajit",
     "order": [
         "test1",
         "test2",
         "test2"
     ],
-    "city": "kolkata",
+    "city": "bangalore",
     "country": "india",
-    "pin": 600
+    "pin": 699
 }
