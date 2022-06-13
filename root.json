@@ -8,18 +8,18 @@
             "type": "object",
             "additionalProperties": false,
             "required": [
-                "greeting",
-                "instructions",
+                "name",
+                "order",
                 "pin",
                 "country",
                 "city"
             ],
             "properties": {
-                "greeting": {
+                "name": {
                     "type": "string",
-                    "description": "tbd"
+                    "description": "name of the person"
                 },
-                "instructions": {
+                "order": {
                     "type": "array",
                     "items": {
                         "type": "string"
