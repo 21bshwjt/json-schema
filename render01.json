@@ -1,13 +1,12 @@
 {
     "$schema": "./root.json",
-    "greeting": "Biswajit",
-    "instructions": [
+    "name": "biswajit",
+    "order": [
         "test1",
         "test2",
         "test2"
     ],
+    "city": "kolkata",
     "country": "india",
-    "pin": 700,
-    "city": "capetown",
-    "hoddysize": 1
+    "pin": 600
 }
